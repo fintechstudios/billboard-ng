@@ -1,11 +1,14 @@
 import angular from 'angular';
 import { bb } from 'billboard.js';
 
+/**
+ * @ngdoc component
+ * @name billboard
+ * @module billboard-ng
+ *
+ * @param {object} options - Chart configuration as per billboard.js API
+ */
 class BillboardController {
-  static get $inject() {
-    return ['$element', '$timeout'];
-  }
-
   constructor($element, $timeout) {
     this.$element = $element;
     this.$timeout = $timeout;
