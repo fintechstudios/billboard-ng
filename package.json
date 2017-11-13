@@ -1,6 +1,6 @@
 {
   "name": "@fintechstudios/billboard-ng",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "AngularJS wrapper for billboard.js",
   "main": "dist/billboard-ng.js",
   "module": "src/billboard-ng.js",
