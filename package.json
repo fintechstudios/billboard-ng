@@ -1,0 +1,44 @@
+{
+  "name": "@fintechstudios/billboard-ng",
+  "version": "0.0.0",
+  "description": "AngularJS wrapper for billboard.js",
+  "main": "dist/billboard-ng.js",
+  "module": "src/billboard-ng.js",
+  "scripts": {
+    "build": "webpack",
+    "build:min": "cross-env NODE_ENV=production webpack -p",
+    "build:release": "npm run build && npm run build:min",
+    "version": "npm run build:release && git add -A dist",
+    "postversion": "git push --follow-tags && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fintechstudios/billboard-ng.git"
+  },
+  "keywords": [
+    "angularjs",
+    "d3",
+    "chart",
+    "graph",
+    "svg"
+  ],
+  "author": "Dylan Praul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fintechstudios/billboard-ng/issues"
+  },
+  "homepage": "https://github.com/fintechstudios/billboard-ng",
+  "dependencies": {
+    "billboard.js": "^1.1.1",
+    "angular": "^1.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-angularjs-annotate": "^0.8.2",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "cross-env": "^5.1.1",
+    "webpack": "^3.8.1"
+  }
+}
