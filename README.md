@@ -1,3 +1,8 @@
+# Archival notice
+
+This is no longer maintained! 
+
+
 # billboard-ng
 A (very light) AngularJS wrapper for [billboard.js](https://naver.github.io/billboard.js/)
 
